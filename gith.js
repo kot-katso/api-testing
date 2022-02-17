@@ -6,8 +6,7 @@ async function FetchGithubUsers() {
 
     `, {
         headers: {
-            'u': 'dfc2b0b60896724527e6:a08482c88376441a2b3a79a1984feac0720ba1cf'
-        }
+            Authorization: "Basic dfc2b0b60896724527e6:a08482c88376441a2b3a79a1984feac0720ba1cf"
         }
     });
     let response = await get.json();
